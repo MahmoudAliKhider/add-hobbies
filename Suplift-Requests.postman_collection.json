@@ -1,0 +1,319 @@
+{
+  "info": {
+    "_postman_id": "9be732d7-6601-448f-acc4-3706e409784f",
+    "name": "Suplift-Requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12706595"
+  },
+  "item": [
+    {
+      "name": "Hobbies",
+      "item": [
+        {
+          "name": "Get all Hobbies with Tools",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-auth-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjhiYWMxODZkMzQwOTBjOWE3NDM2YTEiLCJpYXQiOjE2NTMzMjA3Mjh9.UzlGRrq9LK_Mk8CG_6FAtKr08k15ZosRdtJhhM5x54g",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/hobbies",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "hobbies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get an individual Hobby with the tools",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/hobbies/627f8c5462d522eaf13feb12",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "hobbies", "627f8c5462d522eaf13feb12"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post a Hobby and tools with validation",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-auth-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjhiYWMxODZkMzQwOTBjOWE3NDM2YTEiLCJpYXQiOjE2NTMzMjA3Mjh9.UzlGRrq9LK_Mk8CG_6FAtKr08k15ZosRdtJhhM5x54g",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{       \r\n        \"name\": \"Fisha updated test update\",\r\n        \"description\": \"You will learn how to Cook like a bro fisha updated update\" ,\r\n        \"sessions\": 60,\r\n        \"experienceInYears\": 55,\r\n        \"timeOfSessionInMinuts\": 90,\r\n        \"language\": \"Arabic fisha updated\",\r\n        \"status\": \"Online fisha updated\",\r\n        \"place\": \"Netherlands fisha updated\",\r\n        \"priceInCent\": 516,\r\n        \"tools\": [\r\n            {\r\n                \"title\":\" updated\",\r\n                \"notes\":\"Hello get your footbacll and fuck your mother\"\r\n            }\r\n        ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/hobbies/62812cb1791da7a8b9932c73",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "hobbies", "62812cb1791da7a8b9932c73"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update a Hobby and tools with validation",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{       \r\n        \"name\": \"Cooking updated\",\r\n        \"description\": \"You will learn how to Cook like a bro updated\",\r\n        \"sessions\": 16,\r\n        \"experienceInYears\": 55,\r\n        \"timeOfSessionInMinuts\": 90,\r\n        \"language\": \"Arabic\",\r\n        \"status\": \"Online\",\r\n        \"place\": \"Netherlands\",\r\n        \"priceInCent\": 3625,\r\n        \"tools\": [\r\n            {\r\n                \"title\":\"test updated\",\r\n                \"notes\":\"Hello get your footbacll and fuck your mother updated\"\r\n            }\r\n        ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/hobbies/627f8c5462d522eaf13feb12",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "hobbies", "627f8c5462d522eaf13feb12"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete a Hobby with tools",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "x-auth-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjgzOGI1ZGE2YjlhZTg2NmIzNmZjYmMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTI3ODg1MTN9.RPIKky8T5Am4I-Bqwlh8lvbPoAvGOC7b23126WlCAlQ",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/hobbies/627f8c5462d522eaf13feb12",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "hobbies", "627f8c5462d522eaf13feb12"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Register a new user as kino",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstName\":\"kino\",\r\n    \"lastName\":\"kino\",\r\n    \"phoneNumber\":\"01204583526\",\r\n    \"email\" :\"kino@test.com\",\r\n    \"password\":\"Pa$$w0rd\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "users"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login as bob with valid data",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\" :\"bob@test.com\",\r\n    \"password\":\"Pa$$w0rd\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "auth"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login as bob with invalid data",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\" :\"bob@test.com\",\r\n    \"password\":\"hey I like your password\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "auth"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get the current logged in users",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-auth-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjgxMzU0NmFjYTU2YjhiYmFiMjY3NTYiLCJpYXQiOjE2NTMzMjEyODB9.YM0bJxDB4ICx0RrAKVU6wGF9f3J7sytopk3Y4mf1QBY",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\" :\"bob@test.com\",\r\n    \"password\":\"Pa$$w0rd\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/users/me",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "users", "me"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Register a admin",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\" :\"admin@test.com\",\r\n    \"password\":\"Pa$$w0rd\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "auth"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Register a new user with invalid data",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstName\":\"1\",\r\n    \"lastName\":\"2\",\r\n    \"phoneNumber\":\"\",\r\n    \"email\" :\"kino@test.com\",\r\n    \"password\":\"Pa$$w0rd\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "users"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Order a hobby",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-auth-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjgxMzU0NmFjYTU2YjhiYmFiMjY3NTYiLCJpYXQiOjE2NTMzMjAwMTh9.t11jMek3aRS1XRf0JsN8sq5jdxqPD9FMXu2eJJHt1Q0",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"hobbyId\":\"6269d8405aa4b36e05e6fc68\",\r\n    \"coachId\":\"62838b5da6b9ae866b36fcbc\",\r\n    \"learnerId\":\"62838b5da6b9ae866b36fcbc\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/orders/make-order",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "orders", "make-order"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
